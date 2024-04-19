@@ -296,6 +296,17 @@ img {
   transition: top .4s;
 }
 
+.login__form{
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--border-color);
+  row-gap: 1.25rem;
+}
+
+.login__title{
+  
+}
+
 
 
 /* Show login */
