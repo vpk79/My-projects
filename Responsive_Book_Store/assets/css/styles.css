@@ -226,7 +226,9 @@ img {
 
 
 /* Add shadow header */
-
+.shadow-header{
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+}
 
 /* Active link */
 
@@ -405,7 +407,10 @@ img {
 
 
 /* Swiper class */
-
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+  scale: 1;
+}
 
 /*=============== BUTTON ===============*/
 .button{

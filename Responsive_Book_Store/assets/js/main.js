@@ -36,13 +36,36 @@ if (loginClose) {
     loginClose.addEventListener('click', () => {
         loginContent.classList.remove('show-login')
     })
-}login
+}
 
 /*============= ADD SHADOW HEADER ===============*/
-
+const shadowHeader = () => {
+    const header = document.getElementById('header')
+    // Add a class if the bottom offset is greater than 50 of the viewport
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+        : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowHeader)
 
 /*=============== HOME SWIPER ===============*/
+let swiperHome = new Swiper('.home__swiper', {
+    loop: true,
+    spaceBetween: -24,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
 
+    autoplay: {
+        delay: 3000,
+        disabledOnInteraction: false,
+    },
+
+    breakpoints: {
+        1220: {
+            spaceBetween: -32,
+        }
+    }
+});
 
 /*=============== FEATURED SWIPER ===============*/
 
@@ -53,13 +76,13 @@ if (loginClose) {
 /*=============== TESTIMONIAL SWIPER ===============*/
 
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SHOW SCROLL UP ===============*/
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== DARK LIGHT THEME ===============*/
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
