@@ -238,7 +238,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: var(--z-fixed);
   background-color: hsla(230, 12%, 96%, .6);
   backdrop-filter: blur(16px);
   padding: 8rem 1.5rem;
@@ -283,7 +283,7 @@ img {
 /*=============== LOGIN ===============*/
 .login {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -347,6 +347,11 @@ img {
   margin-bottom: 1.25rem;
 }
 
+.login__button{
+  width: 100%;
+  cursor: pointer;
+}
+
 .login__close {
   position: absolute;
   top: 2rem;
@@ -357,7 +362,9 @@ img {
 }
 
 /* Show login */
-
+.show-login{
+  top: 0;
+}
 
 /*=============== HOME ===============*/
 
