@@ -79,7 +79,6 @@ let swiperFeatured = new Swiper('.featured__swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
    
     breakpoints: {
         1150: {
@@ -95,11 +94,6 @@ let swiperNew = new Swiper('.new__swiper', {
     spaceBetween: 16,
    
     slidesPerView: 'auto',
-    
-
-    
-
-
     breakpoints: {
         1150: {
             slidesPerView: 3,
@@ -115,9 +109,6 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
     grabCursor: true,
     slidesPerView: 'auto',
     centeredSlides: 'auto',
-
-    
-
     breakpoints: {
         1150: {
             slidesPerView: 3,
