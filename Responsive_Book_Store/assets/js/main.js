@@ -79,7 +79,7 @@ let swiperFeatured = new Swiper('.featured__swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-   
+
     breakpoints: {
         1150: {
             slidesPerView: 4,
@@ -92,12 +92,12 @@ let swiperFeatured = new Swiper('.featured__swiper', {
 let swiperNew = new Swiper('.new__swiper', {
     loop: true,
     spaceBetween: 16,
-   
+
     slidesPerView: 'auto',
     breakpoints: {
         1150: {
             slidesPerView: 3,
-           
+
         }
     }
 });
@@ -180,3 +180,14 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true, // Animations repeat
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__images`, { delay: 600 })
+sr.reveal(`.services__card`, { interval: 100 })
