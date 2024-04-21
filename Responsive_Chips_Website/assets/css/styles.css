@@ -207,7 +207,9 @@ img {
 }
 
 /* Shadow header */
-
+.shadow-header{
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, .15);
+}
 
 /* Active link */
 
@@ -286,6 +288,34 @@ img {
   width: 60px;
   filter: var(--shadow-img);
   position: absolute;
+}
+
+.home__chips-1{
+  right: -.5rem;
+}
+
+.home__chips-2 {
+  bottom: -.75rem;
+  right: .5rem;
+}
+
+.home__chips-3 {
+  top: .25rem;
+  left: -.5rem;
+}
+
+.home__tomato-1{
+  top: -1.5rem;
+  right: 2.5rem;
+}
+
+.home__tomato-2 {
+ left: 3.5rem;
+  bottom: -1.5rem;
+}
+
+.home__leaf{
+  left: -.75rem;
 }
 
 /*=============== BUTTON ===============*/
