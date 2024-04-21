@@ -161,18 +161,18 @@ img {
   border-radius: .75rem;
 }
 
-.header__search i{
+.header__search i {
   font-size: 1.25rem;
 }
 
-.header__input{
+.header__input {
   width: 100%;
   padding-block: 1rem;
   background-color: transparent;
   color: var(--white-color);
 }
 
-.header__input::placeholder{
+.header__input::placeholder {
   color: var(--white-color);
 }
 
@@ -180,7 +180,22 @@ img {
 
 
 /*=============== NAV ===============*/
-
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: hsla(0, 0%, 0%, .2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  width: 285px;
+  height: 100%;
+  padding: 3rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: var(--z-fixed);
+  transition: right .4;
+}
 
 /* Show menu */
 
