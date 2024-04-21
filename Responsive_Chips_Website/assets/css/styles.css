@@ -946,5 +946,22 @@ img {
 
   .care__img{
     width: 550px;
+    order: -1;
+  }
+
+  .care__item{
+    column-gap: 1rem;
+  }
+
+  .care__item i{
+    font-size: 2rem;
+  }
+
+  .banner{
+    padding-top: 4rem;
+  }
+
+  .banner__list{
+    column-gap: 6.5rem;
   }
 }
