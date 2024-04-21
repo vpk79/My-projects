@@ -197,6 +197,19 @@ img {
   transition: right .4;
 }
 
+.nav__logo{
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__logo,
+.nav__list{
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--white-color-light);
+}
+
+
+
 /* Show menu */
 
 
