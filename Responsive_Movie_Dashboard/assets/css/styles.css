@@ -208,6 +208,36 @@ img {
   border-bottom: 1px solid var(--white-color-light);
 }
 
+.nav__menu,
+.nav__list{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.nav__link{
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.nav__link i{
+  font-size: 1.5rem;
+}
+
+.nav__title{
+  font-size: var(--normal-font-size);
+  margin-bottom: .75rem;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 
 /* Show menu */
