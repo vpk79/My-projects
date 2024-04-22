@@ -183,7 +183,7 @@ img {
 .nav {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: hsla(0, 0%, 0%, .2);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -194,7 +194,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   z-index: var(--z-fixed);
-  transition: right .4;
+  transition: right .4s;
 }
 
 .nav__logo{
@@ -241,10 +241,41 @@ img {
 
 
 /* Show menu */
-
+.show-menu{
+  right: 0;
+}
 
 /*=============== BANNER ===============*/
+.banner__link{
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+}
 
+.banner__img{
+  border-radius: 1rem;
+}
+
+.banner__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shadow-bg);
+  border-radius: 1rem;
+}
+
+.banner__data{
+  position: absolute;
+  bottom: 1.5rem;
+  text-align: center;
+}
+
+.banner__title{
+  font-size: var(--big-font-size);
+}
 
 /*=============== CARDS ===============*/
 
