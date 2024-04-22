@@ -24,7 +24,7 @@ let swiperMovie = new Swiper('.movie__swiper', {
     slidesPerView: 2,
     spaceBetween: 24,
 
-    beakpoints: {
+    breakpoints: {
         440:{
             slidesPerView: 'auto',
         },
@@ -50,7 +50,7 @@ let swiperNew = new Swiper('.new__swiper', {
         clickable: true,
     },
 
-    beakpoints: {
+    breakpoints: {
         440: {
             slidesPerView: 'auto',
             centeredSlides: false,
