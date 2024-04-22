@@ -20,8 +20,8 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+  --normal-font-size: .838rem;
+  --small-font-size: .713rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -197,40 +197,40 @@ img {
   transition: right .4s;
 }
 
-.nav__logo{
+.nav__logo {
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
 }
 
 .nav__logo,
-.nav__list{
+.nav__list {
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--white-color-light);
 }
 
 .nav__menu,
-.nav__list{
+.nav__list {
   display: grid;
   row-gap: 2rem;
 }
 
-.nav__link{
+.nav__link {
   color: var(--white-color);
   display: inline-flex;
   align-items: center;
   column-gap: .75rem;
 }
 
-.nav__link i{
+.nav__link i {
   font-size: 1.5rem;
 }
 
-.nav__title{
+.nav__title {
   font-size: var(--normal-font-size);
   margin-bottom: .75rem;
 }
 
-.nav__close{
+.nav__close {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
@@ -241,23 +241,23 @@ img {
 
 
 /* Show menu */
-.show-menu{
+.show-menu {
   right: 0;
 }
 
 /*=============== BANNER ===============*/
-.banner__link{
+.banner__link {
   position: relative;
   display: grid;
   place-items: center;
   color: var(--white-color);
 }
 
-.banner__img{
+.banner__img {
   border-radius: 1rem;
 }
 
-.banner__shadow{
+.banner__shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -267,24 +267,80 @@ img {
   border-radius: 1rem;
 }
 
-.banner__data{
+.banner__data {
   position: absolute;
   bottom: 1.5rem;
   text-align: center;
 }
 
-.banner__title{
+.banner__title {
   font-size: var(--big-font-size);
 }
 
 /*=============== CARDS ===============*/
+.card__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
 
+.card__article {
+  width: 152px;
+}
+
+.card__link {
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: var(--white-color);
+}
+
+.card__img {
+  border-radius: 1rem;
+}
+
+.card__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--shadow-bg);
+  border-radius: 1rem;
+}
+
+.card__data {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  padding-inline: .75rem;
+
+}
+
+.card__name {
+  font-size: var(--normal-font-size);
+}
+
+.card__category {
+  font-size: var(--small-font-size);
+}
+
+.card__like {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
 
 /*=============== MOVIES ===============*/
-
+.movie{
+  display: grid;
+}
 
 /* Swiper class */
-
+.swiper{
+  margin-inline: initial;
+}
 
 /*=============== NEW ===============*/
 
