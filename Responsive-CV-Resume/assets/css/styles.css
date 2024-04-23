@@ -48,11 +48,27 @@ html {
 }
 
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme {
+  --title-color: #F2F2F2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+}
 
 /*========== Button Dark/Light ==========*/
-.change-theme{
+.change-theme {
   position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--title-color);
 }
 
 /*========== Font size variables to scale cv ==========*/
@@ -418,7 +434,7 @@ img {
 }
 
 /* Scroll top */
-.scrolltop{
+.scrolltop {
   position: fixed;
   right: 1rem;
   bottom: -20%;
@@ -433,12 +449,12 @@ img {
   visibility: hidden;
 }
 
-.scrolltop__icon{
+.scrolltop__icon {
   font-size: 1.2rem;
   color: var(--text-color);
 }
 
-.show-scroll{
+.show-scroll {
   visibility: visible;
   bottom: 5rem;
 }
@@ -446,7 +462,7 @@ img {
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px) {
-  .nav__list{
+  .nav__list {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem .5rem;
   }
@@ -458,55 +474,55 @@ img {
     margin: 3rem 0;
   }
 
-  .bd-container{
+  .bd-container {
     margin-left: auto;
     margin-right: auto;
   }
 
   .l-header,
-  .scrolltop{
+  .scrolltop {
     display: none;
   }
 
-  .resume{
+  .resume {
     display: grid;
     grid-template-columns: .5fr 1fr;
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 12, .15);
   }
 
-  .resume__left{
+  .resume__left {
     background-color: var(--container-color-alt);
   }
 
   .resume__left,
-  .resume__right{
+  .resume__right {
     padding: 0 1.5rem;
   }
 
   .section-title,
-  .profile__description{
+  .profile__description {
     text-align: initial;
   }
 
-  .home__container{
+  .home__container {
     gap: 1.5rem;
   }
 
-  .home__button-movil{
+  .home__button-movil {
     display: none;
   }
 
-  .references__container{
+  .references__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .languages__content{
+  .languages__content {
     grid-template-columns: repeat(3, max-content);
     column-gap: 3.5rem;
   }
 
-  .interests__container{
+  .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
