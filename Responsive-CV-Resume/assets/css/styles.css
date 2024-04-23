@@ -357,14 +357,14 @@ img {
 }
 
 .skills__name,
-.languages__name{
+.languages__name {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
 .skills__circle,
-.languages__circle{
+.languages__circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -374,30 +374,46 @@ img {
 }
 
 /*========== CERTIFICATES ==========*/
-.certificate__title{
+.certificate__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
 
 /*========== REFERENCES ==========*/
-.references__content{
+.references__content {
   gap: 0.25rem;
 }
 
-.references__subtitle{
+.references__subtitle {
   color: var(--text-color-light);
 }
 
 .references__subtitle,
-.references__contact{
+.references__contact {
   font-size: var(--smallerl-font-size);
 }
 
-.references__title{
+.references__title {
   font-size: var(--h3-font-size);
 }
-/*========== INTERESTS ==========*/
 
+/*========== INTERESTS ==========*/
+.interests__container {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-2);
+}
+
+.interests__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests__icon {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: .25rem;
+}
 
 /* Scroll top */
 
