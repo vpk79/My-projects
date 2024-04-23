@@ -416,7 +416,20 @@ img {
 }
 
 /* Scroll top */
-
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background-color: var(--container-color-alt);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  /* visibility: hidden; */
+}
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
